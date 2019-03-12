@@ -37,7 +37,7 @@ $move-map-in-xs: false !default;
     @media(min-width:$threshold-sm) {
         border-radius: $sidebar-inner-border-radius 0 0 $sidebar-inner-border-radius;
 
-        .collapsed & {
+        .ol3-sb-collapsed & {
             border-radius: $sidebar-inner-border-radius;
         }
     }

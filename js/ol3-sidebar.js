@@ -88,8 +88,8 @@ ol.control.Sidebar.prototype.open = function(id) {
     }
 
     // open ol3-sb-sidebar (if necessary)
-    if (this.element.classList.contains('collapsed')) {
-        this.element.classList.remove('collapsed');
+    if (this.element.classList.contains('ol3-sb-collapsed')) {
+        this.element.classList.remove('ol3-sb-collapsed');
     }
 
     return this;
@@ -104,8 +104,8 @@ ol.control.Sidebar.prototype.close = function() {
     }
 
     // close ol3-sb-sidebar
-    if (!this.element.classList.contains('collapsed')) {
-        this.element.classList.add('collapsed');
+    if (!this.element.classList.contains('ol3-sb-collapsed')) {
+        this.element.classList.add('ol3-sb-collapsed');
     }
 
     return this;

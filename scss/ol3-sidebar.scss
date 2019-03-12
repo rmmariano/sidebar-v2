@@ -28,7 +28,7 @@ $sidebar-inner-border-radius: 2px !default;
         }
     }
 
-    &.collapsed ~ .ol3-sb-sidebar-map {
+    &.ol3-sb-collapsed ~ .ol3-sb-sidebar-map {
 
         .ol-zoom, .ol-scale-line {
             @media(min-width:$threshold-sm) {
@@ -67,7 +67,7 @@ $sidebar-inner-border-radius: 2px !default;
         }
     }
 
-    &.collapsed ~ .ol3-sb-sidebar-map {
+    &.ol3-sb-collapsed ~ .ol3-sb-sidebar-map {
 
         .ol-rotate,
         .ol-attribution,

@@ -35,7 +35,7 @@ $move-map-in-xs: true !default;
 
     z-index: $sidebar-z-index;
 
-    &.collapsed {
+    &.ol3-sb-collapsed {
         width: $tab-size;
     }
 
@@ -180,7 +180,7 @@ $move-map-in-xs: true !default;
     overflow-x: hidden;
     overflow-y: auto;
 
-    .ol3-sb-sidebar.collapsed > & {
+    .ol3-sb-sidebar.ol3-sb-collapsed > & {
         overflow-y: hidden;
     }
 }
