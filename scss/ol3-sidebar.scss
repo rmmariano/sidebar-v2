@@ -3,7 +3,7 @@ $sidebar-inner-border-radius: 2px !default;
 
 @import 'ol-base';
 
-.sidebar-left {
+.ol3-sb-sidebar-left {
 
     & ~ .ol3-sb-sidebar-map {
 
@@ -39,7 +39,7 @@ $sidebar-inner-border-radius: 2px !default;
 }
 
 
-.sidebar-right {
+.ol3-sb-sidebar-right {
 
     & ~ .ol3-sb-sidebar-map {
 

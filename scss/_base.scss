@@ -59,7 +59,7 @@ $move-map-in-xs: true !default;
     }
 }
 
-.sidebar-left {
+.ol3-sb-sidebar-left {
     left: 0;
 
     @media(min-width:$threshold-sm) {
@@ -67,7 +67,7 @@ $move-map-in-xs: true !default;
     }
 }
 
-.sidebar-right {
+.ol3-sb-sidebar-right {
     right: 0;
 
     @media(min-width:$threshold-sm) {
@@ -80,11 +80,11 @@ $move-map-in-xs: true !default;
     bottom: 0;
     height: 100%;
 
-    .sidebar-left & {
+    .ol3-sb-sidebar-left & {
         left: 0;
     }
 
-    .sidebar-right & {
+    .ol3-sb-sidebar-right & {
         right: 0;
     }
 
@@ -162,12 +162,12 @@ $move-map-in-xs: true !default;
 .ol3-sb-sidebar-content {
     position: absolute;
 
-    .sidebar-left & {
+    .ol3-sb-sidebar-left & {
         left: $tab-size;
         right: 0;
     }
 
-    .sidebar-right & {
+    .ol3-sb-sidebar-right & {
         left: 0;
         right: $tab-size;
     }
@@ -220,7 +220,7 @@ $move-map-in-xs: true !default;
     color: $header-fg;
     background-color: $header-bg;
 
-    .sidebar-right & {
+    .ol3-sb-sidebar-right & {
         padding-left: $tab-size;
     }
 }
@@ -233,17 +233,17 @@ $move-map-in-xs: true !default;
     text-align: center;
     cursor: pointer;
 
-    .sidebar-left & {
+    .ol3-sb-sidebar-left & {
         right: 0;
     }
 
-    .sidebar-right & {
+    .ol3-sb-sidebar-right & {
         left: 0;
     }
 }
 
 @if $move-map-in-xs {
-    .sidebar-left ~ .ol3-sb-sidebar-map {
+    .ol3-sb-sidebar-left ~ .ol3-sb-sidebar-map {
         margin-left: $tab-size;
 
         @media(min-width:$threshold-sm) {
@@ -251,7 +251,7 @@ $move-map-in-xs: true !default;
         }
     }
 
-    .sidebar-right ~ .ol3-sb-sidebar-map {
+    .ol3-sb-sidebar-right ~ .ol3-sb-sidebar-map {
         margin-right: $tab-size;
 
         @media(min-width:$threshold-sm) {

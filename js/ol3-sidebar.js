@@ -12,8 +12,8 @@ ol.control.Sidebar = function (settings) {
         target: this._options.target
     });
 
-    // Attach .sidebar-left/right class
-    this.element.classList.add('sidebar-' + this._options.position);
+    // Attach .ol3-sb-sidebar-left/right class
+    this.element.classList.add('ol3-sb-sidebar-' + this._options.position);
 
     // Find ol3-sb-sidebar > div.ol3-sb-sidebar-content
     for (i = this.element.children.length - 1; i >= 0; i--) {
