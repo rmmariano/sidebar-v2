@@ -5,7 +5,7 @@ $sidebar-inner-border-radius: 2px !default;
 
 .sidebar-left {
 
-    & ~ .sidebar-map {
+    & ~ .ol3-sb-sidebar-map {
 
         .ol-zoom, .ol-scale-line {
             margin-left: $tab-size + $sidebar-border-width * 2;
@@ -28,7 +28,7 @@ $sidebar-inner-border-radius: 2px !default;
         }
     }
 
-    &.collapsed ~ .sidebar-map {
+    &.collapsed ~ .ol3-sb-sidebar-map {
 
         .ol-zoom, .ol-scale-line {
             @media(min-width:$threshold-sm) {
@@ -41,7 +41,7 @@ $sidebar-inner-border-radius: 2px !default;
 
 .sidebar-right {
 
-    & ~ .sidebar-map {
+    & ~ .ol3-sb-sidebar-map {
 
         .ol-rotate,
         .ol-attribution,
@@ -67,7 +67,7 @@ $sidebar-inner-border-radius: 2px !default;
         }
     }
 
-    &.collapsed ~ .sidebar-map {
+    &.collapsed ~ .ol3-sb-sidebar-map {
 
         .ol-rotate,
         .ol-attribution,

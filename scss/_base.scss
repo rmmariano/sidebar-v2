@@ -243,7 +243,7 @@ $move-map-in-xs: true !default;
 }
 
 @if $move-map-in-xs {
-    .sidebar-left ~ .sidebar-map {
+    .sidebar-left ~ .ol3-sb-sidebar-map {
         margin-left: $tab-size;
 
         @media(min-width:$threshold-sm) {
@@ -251,7 +251,7 @@ $move-map-in-xs: true !default;
         }
     }
 
-    .sidebar-right ~ .sidebar-map {
+    .sidebar-right ~ .ol3-sb-sidebar-map {
         margin-right: $tab-size;
 
         @media(min-width:$threshold-sm) {
