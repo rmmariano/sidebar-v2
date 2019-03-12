@@ -69,22 +69,22 @@ ol.control.Sidebar.prototype.setMap = function(map) {
 ol.control.Sidebar.prototype.open = function(id) {
     var i, child;
 
-    // hide old active contents and show new content
+    // hide old ol3-sb-active contents and show new content
     for (i = this._panes.length - 1; i >= 0; i--) {
         child = this._panes[i];
         if (child.id == id)
-            child.classList.add('active');
-        else if (child.classList.contains('active'))
-            child.classList.remove('active');
+            child.classList.add('ol3-sb-active');
+        else if (child.classList.contains('ol3-sb-active'))
+            child.classList.remove('ol3-sb-active');
     }
 
-    // remove old active highlights and set new highlight
+    // remove old ol3-sb-active highlights and set new highlight
     for (i = this._tabitems.length - 1; i >= 0; i--) {
         child = this._tabitems[i];
         if (child.querySelector('a').hash == '#' + id)
-            child.classList.add('active');
-        else if (child.classList.contains('active'))
-            child.classList.remove('active');
+            child.classList.add('ol3-sb-active');
+        else if (child.classList.contains('ol3-sb-active'))
+            child.classList.remove('ol3-sb-active');
     }
 
     // open ol3-sb-sidebar (if necessary)
@@ -96,11 +96,11 @@ ol.control.Sidebar.prototype.open = function(id) {
 };
 
 ol.control.Sidebar.prototype.close = function() {
-    // remove old active highlights
+    // remove old ol3-sb-active highlights
     for (var i = this._tabitems.length - 1; i >= 0; i--) {
         var child = this._tabitems[i];
-        if (child.classList.contains('active'))
-            child.classList.remove('active');
+        if (child.classList.contains('ol3-sb-active'))
+            child.classList.remove('ol3-sb-active');
     }
 
     // close ol3-sb-sidebar
@@ -113,7 +113,7 @@ ol.control.Sidebar.prototype.close = function() {
 
 ol.control.Sidebar.prototype._onClick = function(evt) {
     evt.preventDefault();
-    if (this.classList.contains('active')) {
+    if (this.classList.contains('ol3-sb-active')) {
         this._sidebar.close();
     } else if (!this.classList.contains('disabled')) {
         this._sidebar.open(this.querySelector('a').hash.slice(1));

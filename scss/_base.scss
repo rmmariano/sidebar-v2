@@ -118,7 +118,7 @@ $move-map-in-xs: true !default;
                 background-color: $tab-hover-bg;
             }
 
-            &.active {
+            &.ol3-sb-active {
                 color: $tab-active-fg;
                 background-color: $tab-active-bg;
             }
@@ -194,7 +194,7 @@ $move-map-in-xs: true !default;
 
     padding: $content-padding-vertical $content-padding-horizontal;
 
-    &.active {
+    &.ol3-sb-active {
         display: block;
     }
 
