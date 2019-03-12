@@ -31,7 +31,7 @@ $move-map-in-xs: false !default;
     border-left: $sidebar-border;
 }
 
-.sidebar-tabs {
+.ol3-sb-sidebar-tabs {
     overflow: hidden;
 
     @media(min-width:$threshold-sm) {

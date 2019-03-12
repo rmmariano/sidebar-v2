@@ -24,8 +24,8 @@ ol.control.Sidebar = function (settings) {
         }
     }
 
-    // Find ol3-sb-sidebar ul.sidebar-tabs > li, ol3-sb-sidebar .sidebar-tabs > ul > li
-    this._tabitems = this.element.querySelectorAll('ul.sidebar-tabs > li, .sidebar-tabs > ul > li');
+    // Find ol3-sb-sidebar ul.ol3-sb-sidebar-tabs > li, ol3-sb-sidebar .ol3-sb-sidebar-tabs > ul > li
+    this._tabitems = this.element.querySelectorAll('ul.ol3-sb-sidebar-tabs > li, .ol3-sb-sidebar-tabs > ul > li');
     for (i = this._tabitems.length - 1; i >= 0; i--) {
         this._tabitems[i]._sidebar = this;
     }
