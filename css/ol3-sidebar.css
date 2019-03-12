@@ -166,7 +166,7 @@
   padding-left: 40px;
 }
 
-.sidebar-close {
+.ol3-sb-sidebar-close {
   position: absolute;
   top: 0;
   width: 40px;
@@ -174,10 +174,10 @@
   text-align: center;
   cursor: pointer;
 }
-.sidebar-left .sidebar-close {
+.sidebar-left .ol3-sb-sidebar-close {
   right: 0;
 }
-.sidebar-right .sidebar-close {
+.sidebar-right .ol3-sb-sidebar-close {
   left: 0;
 }
 

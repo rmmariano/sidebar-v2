@@ -39,7 +39,7 @@ ol.control.Sidebar = function (settings) {
                 child.classList.contains('ol3-sb-sidebar-pane')) {
             this._panes.push(child);
 
-            var closeButtons = child.querySelectorAll('.sidebar-close');
+            var closeButtons = child.querySelectorAll('.ol3-sb-sidebar-close');
             for (var j = 0, len = closeButtons.length; j < len; j++) {
                 this._closeButtons.push(closeButtons[j]);
             }
