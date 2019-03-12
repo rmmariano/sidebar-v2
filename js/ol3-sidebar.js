@@ -15,7 +15,7 @@ ol.control.Sidebar = function (settings) {
     // Attach .sidebar-left/right class
     this.element.classList.add('sidebar-' + this._options.position);
 
-    // Find sidebar > div.sidebar-content
+    // Find ol3-sb-sidebar > div.sidebar-content
     for (i = this.element.children.length - 1; i >= 0; i--) {
         child = this.element.children[i];
         if (child.tagName === 'DIV' &&
@@ -24,13 +24,13 @@ ol.control.Sidebar = function (settings) {
         }
     }
 
-    // Find sidebar ul.sidebar-tabs > li, sidebar .sidebar-tabs > ul > li
+    // Find ol3-sb-sidebar ul.sidebar-tabs > li, ol3-sb-sidebar .sidebar-tabs > ul > li
     this._tabitems = this.element.querySelectorAll('ul.sidebar-tabs > li, .sidebar-tabs > ul > li');
     for (i = this._tabitems.length - 1; i >= 0; i--) {
         this._tabitems[i]._sidebar = this;
     }
 
-    // Find sidebar > div.sidebar-content > div.sidebar-pane
+    // Find ol3-sb-sidebar > div.sidebar-content > div.sidebar-pane
     this._panes = [];
     this._closeButtons = [];
     for (i = this._container.children.length - 1; i >= 0; i--) {
@@ -87,7 +87,7 @@ ol.control.Sidebar.prototype.open = function(id) {
             child.classList.remove('active');
     }
 
-    // open sidebar (if necessary)
+    // open ol3-sb-sidebar (if necessary)
     if (this.element.classList.contains('collapsed')) {
         this.element.classList.remove('collapsed');
     }
@@ -103,7 +103,7 @@ ol.control.Sidebar.prototype.close = function() {
             child.classList.remove('active');
     }
 
-    // close sidebar
+    // close ol3-sb-sidebar
     if (!this.element.classList.contains('collapsed')) {
         this.element.classList.add('collapsed');
     }

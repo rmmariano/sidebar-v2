@@ -14,7 +14,7 @@ $move-map-in-xs: false !default;
 
 @import 'base';
 
-.sidebar {
+.ol3-sb-sidebar {
     background-color: $sidebar-bg;
 
     @media(min-width:$threshold-sm) {

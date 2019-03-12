@@ -24,7 +24,7 @@ $content-padding-horizontal: 20px !default;
 
 $move-map-in-xs: true !default;
 
-.sidebar {
+.ol3-sb-sidebar {
     position: absolute;
 
     top: 0;
@@ -180,7 +180,7 @@ $move-map-in-xs: true !default;
     overflow-x: hidden;
     overflow-y: auto;
 
-    .sidebar.collapsed > & {
+    .ol3-sb-sidebar.collapsed > & {
         overflow-y: hidden;
     }
 }
