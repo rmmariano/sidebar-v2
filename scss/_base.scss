@@ -123,7 +123,7 @@ $move-map-in-xs: true !default;
                 background-color: $tab-active-bg;
             }
 
-            &.disabled {
+            &.ol3-sb-disabled {
                 color: fade-out($tab-fg, 0.6);
 
                 &:hover {

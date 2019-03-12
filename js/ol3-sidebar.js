@@ -115,7 +115,7 @@ ol.control.Sidebar.prototype._onClick = function(evt) {
     evt.preventDefault();
     if (this.classList.contains('ol3-sb-active')) {
         this._sidebar.close();
-    } else if (!this.classList.contains('disabled')) {
+    } else if (!this.classList.contains('ol3-sb-disabled')) {
         this._sidebar.open(this.querySelector('a').hash.slice(1));
     }
 };

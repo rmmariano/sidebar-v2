@@ -85,13 +85,13 @@
   color: #fff;
   background-color: #0074d9;
 }
-.ol3-sb-sidebar-tabs > li.disabled, .ol3-sb-sidebar-tabs > ul > li.disabled {
+.ol3-sb-sidebar-tabs > li.ol3-sb-disabled, .ol3-sb-sidebar-tabs > ul > li.ol3-sb-disabled {
   color: rgba(255, 255, 255, 0.4);
 }
-.ol3-sb-sidebar-tabs > li.disabled:hover, .ol3-sb-sidebar-tabs > ul > li.disabled:hover {
+.ol3-sb-sidebar-tabs > li.ol3-sb-disabled:hover, .ol3-sb-sidebar-tabs > ul > li.ol3-sb-disabled:hover {
   background: transparent;
 }
-.ol3-sb-sidebar-tabs > li.disabled > a, .ol3-sb-sidebar-tabs > ul > li.disabled > a {
+.ol3-sb-sidebar-tabs > li.ol3-sb-disabled > a, .ol3-sb-sidebar-tabs > ul > li.ol3-sb-disabled > a {
   cursor: default;
 }
 .ol3-sb-sidebar-tabs > li > a, .ol3-sb-sidebar-tabs > ul > li > a {
