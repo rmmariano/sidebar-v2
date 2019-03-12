@@ -30,13 +30,13 @@ ol.control.Sidebar = function (settings) {
         this._tabitems[i]._sidebar = this;
     }
 
-    // Find ol3-sb-sidebar > div.ol3-sb-sidebar-content > div.sidebar-pane
+    // Find ol3-sb-sidebar > div.ol3-sb-sidebar-content > div.ol3-sb-sidebar-pane
     this._panes = [];
     this._closeButtons = [];
     for (i = this._container.children.length - 1; i >= 0; i--) {
         child = this._container.children[i];
         if (child.tagName == 'DIV' &&
-                child.classList.contains('sidebar-pane')) {
+                child.classList.contains('ol3-sb-sidebar-pane')) {
             this._panes.push(child);
 
             var closeButtons = child.querySelectorAll('.sidebar-close');
