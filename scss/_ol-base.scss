@@ -14,7 +14,7 @@ $move-map-in-xs: false !default;
 
 @import 'base';
 
-.ol3-sb-sidebar {
+.ol-sb-sidebar {
     background-color: $sidebar-bg;
 
     @media(min-width:$threshold-sm) {
@@ -23,27 +23,27 @@ $move-map-in-xs: false !default;
     }
 }
 
-.ol3-sb-sidebar-left {
+.ol-sb-sidebar-left {
     border-right: $sidebar-border;
 }
 
-.ol3-sb-sidebar-right {
+.ol-sb-sidebar-right {
     border-left: $sidebar-border;
 }
 
-.ol3-sb-sidebar-tabs {
+.ol-sb-sidebar-tabs {
     overflow: hidden;
 
     @media(min-width:$threshold-sm) {
         border-radius: $sidebar-inner-border-radius 0 0 $sidebar-inner-border-radius;
 
-        .ol3-sb-collapsed & {
+        .ol-sb-collapsed & {
             border-radius: $sidebar-inner-border-radius;
         }
     }
 }
 
-.ol3-sb-sidebar-content {
+.ol-sb-sidebar-content {
     @media(min-width:$threshold-sm) {
         border-radius: 0 $sidebar-inner-border-radius $sidebar-inner-border-radius 0;
     }

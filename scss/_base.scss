@@ -24,7 +24,7 @@ $content-padding-horizontal: 20px !default;
 
 $move-map-in-xs: true !default;
 
-.ol3-sb-sidebar {
+.ol-sb-sidebar {
     position: absolute;
 
     top: 0;
@@ -35,7 +35,7 @@ $move-map-in-xs: true !default;
 
     z-index: $sidebar-z-index;
 
-    &.ol3-sb-collapsed {
+    &.ol-sb-collapsed {
         width: $tab-size;
     }
 
@@ -59,7 +59,7 @@ $move-map-in-xs: true !default;
     }
 }
 
-.ol3-sb-sidebar-left {
+.ol-sb-sidebar-left {
     left: 0;
 
     @media(min-width:$threshold-sm) {
@@ -67,7 +67,7 @@ $move-map-in-xs: true !default;
     }
 }
 
-.ol3-sb-sidebar-right {
+.ol-sb-sidebar-right {
     right: 0;
 
     @media(min-width:$threshold-sm) {
@@ -75,16 +75,16 @@ $move-map-in-xs: true !default;
     }
 }
 
-.ol3-sb-sidebar-tabs {
+.ol-sb-sidebar-tabs {
     top: 0;
     bottom: 0;
     height: 100%;
 
-    .ol3-sb-sidebar-left & {
+    .ol-sb-sidebar-left & {
         left: 0;
     }
 
-    .ol3-sb-sidebar-right & {
+    .ol-sb-sidebar-right & {
         right: 0;
     }
 
@@ -118,12 +118,12 @@ $move-map-in-xs: true !default;
                 background-color: $tab-hover-bg;
             }
 
-            &.ol3-sb-active {
+            &.ol-sb-active {
                 color: $tab-active-fg;
                 background-color: $tab-active-bg;
             }
 
-            &.ol3-sb-disabled {
+            &.ol-sb-disabled {
                 color: fade-out($tab-fg, 0.6);
 
                 &:hover {
@@ -159,15 +159,15 @@ $move-map-in-xs: true !default;
     }
 }
 
-.ol3-sb-sidebar-content {
+.ol-sb-sidebar-content {
     position: absolute;
 
-    .ol3-sb-sidebar-left & {
+    .ol-sb-sidebar-left & {
         left: $tab-size;
         right: 0;
     }
 
-    .ol3-sb-sidebar-right & {
+    .ol-sb-sidebar-right & {
         left: 0;
         right: $tab-size;
     }
@@ -180,12 +180,12 @@ $move-map-in-xs: true !default;
     overflow-x: hidden;
     overflow-y: auto;
 
-    .ol3-sb-sidebar.ol3-sb-collapsed > & {
+    .ol-sb-sidebar.ol-sb-collapsed > & {
         overflow-y: hidden;
     }
 }
 
-.ol3-sb-sidebar-pane {
+.ol-sb-sidebar-pane {
     display: none;
 
     left: 0;
@@ -194,7 +194,7 @@ $move-map-in-xs: true !default;
 
     padding: $content-padding-vertical $content-padding-horizontal;
 
-    &.ol3-sb-active {
+    &.ol-sb-active {
         display: block;
     }
 
@@ -211,7 +211,7 @@ $move-map-in-xs: true !default;
     }
 }
 
-.ol3-sb-sidebar-header {
+.ol-sb-sidebar-header {
     margin: (-$content-padding-vertical) (-$content-padding-horizontal) 0;
     height: $tab-size;
     padding: 0 $content-padding-horizontal;
@@ -220,12 +220,12 @@ $move-map-in-xs: true !default;
     color: $header-fg;
     background-color: $header-bg;
 
-    .ol3-sb-sidebar-right & {
+    .ol-sb-sidebar-right & {
         padding-left: $tab-size;
     }
 }
 
-.ol3-sb-sidebar-close {
+.ol-sb-sidebar-close {
     position: absolute;
     top: 0;
     width: $tab-size;
@@ -233,17 +233,17 @@ $move-map-in-xs: true !default;
     text-align: center;
     cursor: pointer;
 
-    .ol3-sb-sidebar-left & {
+    .ol-sb-sidebar-left & {
         right: 0;
     }
 
-    .ol3-sb-sidebar-right & {
+    .ol-sb-sidebar-right & {
         left: 0;
     }
 }
 
 @if $move-map-in-xs {
-    .ol3-sb-sidebar-left ~ .ol3-sb-sidebar-map {
+    .ol-sb-sidebar-left ~ .ol-sb-sidebar-map {
         margin-left: $tab-size;
 
         @media(min-width:$threshold-sm) {
@@ -251,7 +251,7 @@ $move-map-in-xs: true !default;
         }
     }
 
-    .ol3-sb-sidebar-right ~ .ol3-sb-sidebar-map {
+    .ol-sb-sidebar-right ~ .ol-sb-sidebar-map {
         margin-right: $tab-size;
 
         @media(min-width:$threshold-sm) {
