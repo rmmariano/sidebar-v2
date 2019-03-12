@@ -43,7 +43,7 @@ $move-map-in-xs: false !default;
     }
 }
 
-.sidebar-content {
+.ol3-sb-sidebar-content {
     @media(min-width:$threshold-sm) {
         border-radius: 0 $sidebar-inner-border-radius $sidebar-inner-border-radius 0;
     }

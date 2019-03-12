@@ -107,7 +107,7 @@
   bottom: 0;
 }
 
-.sidebar-content {
+.ol3-sb-sidebar-content {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -115,15 +115,15 @@
   overflow-x: hidden;
   overflow-y: auto;
 }
-.sidebar-left .sidebar-content {
+.sidebar-left .ol3-sb-sidebar-content {
   left: 40px;
   right: 0;
 }
-.sidebar-right .sidebar-content {
+.sidebar-right .ol3-sb-sidebar-content {
   left: 0;
   right: 40px;
 }
-.ol3-sb-sidebar.collapsed > .sidebar-content {
+.ol3-sb-sidebar.collapsed > .ol3-sb-sidebar-content {
   overflow-y: hidden;
 }
 
@@ -212,7 +212,7 @@
 }
 
 @media (min-width: 768px) {
-  .sidebar-content {
+  .ol3-sb-sidebar-content {
     border-radius: 0 2px 2px 0;
   }
 }

@@ -15,11 +15,11 @@ ol.control.Sidebar = function (settings) {
     // Attach .sidebar-left/right class
     this.element.classList.add('sidebar-' + this._options.position);
 
-    // Find ol3-sb-sidebar > div.sidebar-content
+    // Find ol3-sb-sidebar > div.ol3-sb-sidebar-content
     for (i = this.element.children.length - 1; i >= 0; i--) {
         child = this.element.children[i];
         if (child.tagName === 'DIV' &&
-                child.classList.contains('sidebar-content')) {
+                child.classList.contains('ol3-sb-sidebar-content')) {
             this._container = child;
         }
     }
@@ -30,7 +30,7 @@ ol.control.Sidebar = function (settings) {
         this._tabitems[i]._sidebar = this;
     }
 
-    // Find ol3-sb-sidebar > div.sidebar-content > div.sidebar-pane
+    // Find ol3-sb-sidebar > div.ol3-sb-sidebar-content > div.sidebar-pane
     this._panes = [];
     this._closeButtons = [];
     for (i = this._container.children.length - 1; i >= 0; i--) {
